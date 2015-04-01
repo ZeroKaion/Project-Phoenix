@@ -1,5 +1,28 @@
 package zerokaion.projectphoenix;
+import zerokaion.projectphoenix.help.Reference;
+import zerokaion.projectphoenix.init.ModItem;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class ProjectPhoenix {
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event)
+	{
+		ModItem.init();
+	}
+	
+	@Mod.EventHandler
+	public void Init(FMLInitializationEvent event)
+	{
 
+	}
+	
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event)
+	{
+		
+	}
 }

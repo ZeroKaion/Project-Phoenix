@@ -1,0 +1,16 @@
+package zerokaion.projectphoenix.init;
+
+import zerokaion.projectphoenix.ProjectPhoenix;
+import zerokaion.projectphoenix.help.RegisterHelper;
+import zerokaion.projectphoenix.items.ProjectPhoenixItem;
+import net.minecraft.item.Item;
+
+
+public class ModItem 
+{
+	public static Item Firestone = new ProjectPhoenixItem().setUnlocalizedName("Firestone");
+    public static void init()
+    {
+    	RegisterHelper.registerItem(Firestone);
+    }
+}
